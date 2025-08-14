@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Independence Day | Create with Your Name</title>
-    <meta name="description" content="Apne naam ke saath ek anokha Happy Independence Day wishing card banayein! 💖 Is special Happy Independence Day greeting ko aasani se WhatsApp par share karein aur apno ko surprise dein.">
-    <meta name="keywords" content="Happy Independence Day wishes, Happy Independence Day wishes with name, Happy Independence Day 2025, Independence Day greeting card online, Happy Independence Day WhatsApp status, Personalized Independence Day wishes, Independence Day GIF greetings, Independence Day ki shubhkamnaye, Apne naam se Independence Day wish">
+    <title>Happy Janmashtami | Apne Naam Se Wish Banayein</title>
+    
+    <!-- SEO Tags for Janmashtami -->
+    <meta name="description" content="Apne naam ke saath ek anokha Happy Janmashtami wishing card banayein! 🕉️ Is pyaare se Krishna Janmashtami greeting ko WhatsApp par share karein aur sabko shubhkamnayein dein.">
+    <meta name="keywords" content="Happy Janmashtami wishes, Krishna Janmashtami wishes with name, Janmashtami 2024, Janmashtami greeting card online, Happy Janmashtami WhatsApp status, Krishna GIF, Janmashtami ki shubhkamnaye, apne naam se Janmashtami wish">
+    
+    <!-- Traditional Indian Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: radial-gradient(circle, #ff9933 0%, #ffffff 50%, #138808 100%); /* Tiranga theme background */
+            /* Janmashtami Theme Background: Deep Blue & Gold */
+            background: radial-gradient(circle, #fde4a7 0%, #0c3c60 100%);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,31 +29,32 @@
             box-sizing: border-box;
         }
         .card {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 25px 30px 30px 30px;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0, 51, 102, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
             max-width: 420px;
             width: 100%;
             text-align: center;
-            backdrop-filter: blur(5px);
-            border: 2px solid white;
+            backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 255, 255, 0.7);
             position: relative;
             overflow: hidden;
             margin-bottom: 20px;
         }
+        /* Decorative Peacock Feather */
         .card::before, .card::after {
-            content: ' अशोक चक्र '; /* Changed to Ashoka Chakra */
-            font-size: 14px;
+            content: '🦚';
+            font-size: 40px;
             color: #000080;
             position: absolute;
-            opacity: 0.5;
+            opacity: 0.15;
+            z-index: -1;
         }
-        .card::before { top: 15px; left: 15px; }
-        .card::after { bottom: 15px; right: 15px; }
+        .card::before { top: -10px; left: -10px; transform: rotate(-45deg); }
+        .card::after { bottom: -10px; right: -10px; transform: rotate(135deg); }
         
-        /* CORRECTED CLASS NAME HERE */
-        .independence-day-gif {
+        .janmashtami-gif {
             max-width: 100%;
             height: auto;
             border-radius: 15px;
@@ -58,19 +64,19 @@
         }
 
         .quote {
-            /* FONT STYLE CHANGED TO TIMES NEW ROMAN */
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5em; /* Adjusted size for better readability */
+            /* Using a traditional Devanagari font for a cultural feel */
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-size: 1.8em;
             font-weight: bold;
-            color: #000080; /* Navy Blue color */
+            color: #003366; /* Deep Navy Blue color */
             margin: 0;
             margin-bottom: 15px;
             line-height: 1.6;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Removed glitter for classic look */
+            font-style: italic;
         }
         
         .sender-info {
-            color: #138808; /* Saffron color */
+            color: #d17a00; /* Golden/Saffron color */
             font-weight: 600;
             font-size: 1.1em;
             margin-bottom: 20px;
@@ -80,26 +86,26 @@
         .name-input {
             width: 100%;
             padding: 14px 20px;
-            border: 2px solid #FF9933; /* Saffron border */
+            border: 2px solid #fecb53; /* Golden border */
             border-radius: 30px;
             font-size: 1.1em;
             font-weight: 600;
-            color: #138808; /* Green text */
+            color: #003366; /* Navy blue text */
             margin-bottom: 20px;
             box-sizing: border-box;
             text-align: center;
             transition: all 0.3s ease;
-            background-color: #f0f8ff;
+            background-color: #fffaf0; /* Light cream background */
         }
-        .name-input::placeholder { color: #d3d3d3; font-weight: 400; }
+        .name-input::placeholder { color: #d1b071; font-weight: 400; }
         .name-input:focus {
             outline: none;
-            border-color: #138808; /* Green border on focus */
-            box-shadow: 0 0 15px rgba(19, 136, 8, 0.3);
+            border-color: #003366;
+            box-shadow: 0 0 15px rgba(0, 51, 102, 0.3);
             background-color: #ffffff;
         }
         .whatsapp-btn {
-            background: linear-gradient(45deg, #FF9933, #e68a2e); /* Saffron button */
+            background: linear-gradient(45deg, #003366, #1e5a8f); /* Navy Blue Button */
             color: white;
             border: none;
             padding: 15px 30px;
@@ -112,12 +118,12 @@
             gap: 12px;
             transition: all 0.3s ease;
             text-decoration: none;
-            box-shadow: 0 5px 15px rgba(255, 153, 51, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 51, 102, 0.4);
             border: 2px solid white;
         }
         .whatsapp-btn:hover {
             transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 153, 51, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 51, 102, 0.5);
         }
         .whatsapp-btn svg { width: 24px; height: 24px; fill: white; }
         .ad-container {
@@ -130,62 +136,57 @@
 <body>
    <!-- Your Ad Code -->
    <div class="ad-container">
-        <script type="text/javascript">
-            atOptions = { 'key' : '10b3c689265e32a7f2ba1e17ac6cb366', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/10b3c689265e32a7f2ba1e17ac6cb366/invoke.js"></script>
-    </div>
+        <!-- Ad code goes here if you have any -->
+   </div>
 
     <div class="card">
-        <!-- 1. GIF LINK UPDATED HERE -->
-        <img src="https://i.ibb.co/7m5yfWV/independent.gif" alt="Happy Independence Day" class="independence-day-gif">
+        <!-- Janmashtami GIF (You can replace this link with your own) -->
+        <img src="https://media1.tenor.com/m/d5p6pl52k4AAAAAC/happy-janmashtami-janmashtami.gif" alt="Happy Janmashtami" class="janmashtami-gif">
         
         <p class="quote">
-            "Azadi sirf ek din ka jashn nahi,
-            yeh har din apne desh ke liye jeene ka iraada hai.
-            Tiranga humare sirf haathon me nahi,
-            hamare dil ki dhadkan me rehta hain."
-            <br><strong>Happy Independence Day!</strong>
+            "Makhan ka katora, mishri ka thaal,
+            Mitti ki khushboo, baarish ki fuhaar,
+            Radha ki ummeed, Kanhaiya ka pyaar,
+            Mubarak ho aapko Janmashtami ka tyohar!"
         </p>
 
         <div id="senderNameDisplay" class="sender-info"></div>
 
-        <input type="text" id="nameInput" class="name-input" placeholder="Yahan apna naam likhein...">
+        <input type="text" id="nameInput" class="name-input" placeholder="Yahan apna shubh naam likhein...">
 
         <button id="whatsappShareBtn" class="whatsapp-btn">
-            <!-- SVG Icon changed to a more fitting one for sharing -->
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-            Wish Share Karein
+            Shubhkamnayein Bhejein
         </button>
     </div>
 
-    <!-- JAVASCRIPT LOGIC - No changes needed here, it's perfect -->
     <script>
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             const senderName = urlParams.get('from');
-
             if (senderName) {
                 const decodedName = decodeURIComponent(senderName);
                 const nameDisplayElement = document.getElementById('senderNameDisplay');
-                nameDisplayElement.textContent = `Aapko yeh wish bheji hai: ${decodedName} ne`;
+                // Displaying the sender's name in a more festive way
+                nameDisplayElement.innerHTML = `✨ Yeh shubhkamnayein bheji hain: <strong>${decodedName}</strong> ne ✨`;
             }
         };
 
         document.getElementById('whatsappShareBtn').addEventListener('click', function() {
             const name = document.getElementById('nameInput').value.trim();
             if (name === "") {
-                alert("Please enter your name first! :)");
+                alert("Kripya pehle apna naam likhein! :)");
                 return;
             }
             
             const pageLink = `${window.location.origin}${window.location.pathname}?from=${encodeURIComponent(name)}`;
             
-            const message = `🇮🇳 *Happy Independence Day!* 🇮🇳\n\n` +
-                            `Ek khaas sandesh aapke liye, mere taraf se. ✨\n\n` +
-                            `Is link ko open karein:\n` +
+            // Updated WhatsApp message for Janmashtami
+            const message = `🕉️ *Happy Janmashtami!* 🦚\n\n` +
+                            `Krishna jinka naam, Gokul jinka dhaam, Aise Shree Krishna Bhagwan ko, hum sab ka pranam! 🙏\n\n` +
+                            `Ek pyaara sa sandesh aapke liye:\n` +
                             `${pageLink}\n\n`+
-                            `*From: ${name}* 🙏`;
+                            `*Aapka/Aapki Priy,\n${name}*`;
                             
             const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
@@ -194,10 +195,7 @@
 
     <!-- Your Ad Code -->
     <div class="ad-container">
-        <script type="text/javascript">
-            atOptions = { 'key' : '10b3c689265e32a7f2ba1e17ac6cb366', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/10b3c689265e32a7f2ba1e17ac6cb366/invoke.js"></script>
+        <!-- Ad code goes here if you have any -->
     </div>
 </body>
 </html>
